@@ -67,4 +67,8 @@ puts array7[-1]
 puts array7[1..3]
 puts
 print array7.map{ |v| " Hello " + v}
+puts
 print array7.select{ |i| i.size == 5 }
+puts
+print arra7.select{ |i| i[0] == "S"}
+puts 
