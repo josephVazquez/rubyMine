@@ -1,0 +1,52 @@
+def hello(greeting, name)
+  puts "#{greeting} #{name}!"
+end
+
+hello("Hi", "Don")
+
+class Monster
+  attr_accessor :type, :gender
+  attr_reader :age
+  attr_writer :victims
+  def initialize(type, gender)
+  @type = type
+  @gender = gender
+  end
+  def set_age(age)
+    @age = age
+  end
+
+    def get_victims
+      @victims
+    end
+end
+
+george = Monster.new('Werewolf', 'Male')
+
+george.set_age(21)
+george.type = 'Vampire'
+george.gender = 'female'
+george.victims = 231
+puts george.get_victims
+puts george.age
+puts "George the #{george.type} is now #{george.gender}"
+
+class Victims
+  attr_writer :bloodType
+  attr_reader :name, :age, :gender
+  attr_accessor :weight, :taste
+  def initialize(name, age, gender, weight, taste, bloodType)
+    @name = name
+    @age = age
+    @gender = gender
+    @weight = weight
+    @taste = taste
+    @bloodType = bloodType
+  end
+  def set_name(name)
+    @name = name
+  end
+  def set_age(age)
+    @age = age
+  end
+end
