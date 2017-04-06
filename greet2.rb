@@ -70,5 +70,5 @@ print array7.map{ |v| " Hello " + v}
 puts
 print array7.select{ |i| i.size == 5 }
 puts
-print arra7.select{ |i| i[0] == "S"}
-puts 
+print arra7.select{ |i| i[0] == "S" && i[1] == "a"}
+puts
