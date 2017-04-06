@@ -72,3 +72,11 @@ print array7.select{ |i| i.size == 5 }
 puts
 print arra7.select{ |i| i[0] == "S" && i[1] == "a"}
 puts
+
+array8 = array7[1..3].map(&:clone)
+print array8
+puts
+
+array7.sort!
+print array7
+puts
