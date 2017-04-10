@@ -80,3 +80,6 @@ puts
 array7.sort!
 print array7
 puts
+puts
+puts
+puts
